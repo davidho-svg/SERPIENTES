@@ -1,0 +1,119 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212;
+    color: #d1d1d1;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(90deg, #2c3e50, #34495e); /* Tonos azul grisáceo suaves */
+    padding: 1rem;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+}
+
+.logo {
+    width: 80px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+}
+
+.nav-links li a {
+    color: #b0bec5; /* Azul suave */
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #eceff1; /* Gris claro para resaltar */
+    text-shadow: 0 0 8px #b0bec5;
+}
+
+.neon {
+    text-shadow: 0 0 5px #546e7a, 0 0 15px #546e7a, 0 0 30px #546e7a; /* Azul desaturado */
+    color: #546e7a;
+}
+
+main {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    background: #1e1e1e;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.8);
+}
+
+.section-img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin: 1rem 0;
+    border-radius: 8px;
+}
+
+button {
+    background-color: #546e7a; /* Azul grisáceo */
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #37474f; /* Azul ligeramente más oscuro */
+    transform: translateY(-3px);
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #2c3e50; /* Azul grisáceo */
+    color: #d1d1d1;
+}
+
+/* Ocultar texto dinámico */
+.hidden {
+    display: none;
+}
+
+/* Animaciones */
+@keyframes glow {
+    0%, 100% {
+        text-shadow: 0 0 5px #546e7a, 0 0 15px #546e7a; /* Azul grisáceo tenue */
+    }
+    50% {
+        text-shadow: 0 0 10px #546e7a, 0 0 20px #546e7a;
+    }
+}
+
+.neon {
+    animation: glow 2s infinite alternate;
+}
